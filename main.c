@@ -109,6 +109,31 @@ void f1 (t_categorey *position, t_position *P, t_position *n_th_sub_position_P) 
                                     )
                         )
             ]
+            position->
+                morphisms->
+                    implementations[4][1](
+                        new_variadic_ref_array(
+                            new_variadic_ref_array(
+                                theta_0, 
+                                phi_0
+                            ),
+                            new_variadic_ref_array(
+                                theta_1,
+                                phi_1
+                            )
+                        ),
+
+                        new_variadic_ref_array(
+                            new_variadic_ref_array(
+                                x_0,
+                                y_0
+                            ),
+                            new_variadic_ref_array(
+                                x_1,
+                                y_1
+                            )
+                        )
+                    );
         );
     );
     

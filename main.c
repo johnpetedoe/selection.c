@@ -72,7 +72,7 @@ void f1 (t_categorey *position, t_position *P, t_position *n_th_sub_position_P) 
                         
                     )
         )
-        == true;                                //(INCL {0 .. (length morphisms)} S)
+        == true;                                                // (INCL {0 .. (length morphisms)} S)
     )
 
     assert (
@@ -109,6 +109,7 @@ void f1 (t_categorey *position, t_position *P, t_position *n_th_sub_position_P) 
                                     )
                         )
             ]
+
             position->
                 morphisms->
                     implementations[4][1](
@@ -134,26 +135,24 @@ void f1 (t_categorey *position, t_position *P, t_position *n_th_sub_position_P) 
                             )
                         )
                     );
-        );
-    );
-    
-    assert (
-        
+        ); // (:= ([{}] {~P}) { [[theta_0, phi_0], [theta1, phi_1]] [[x_0 y_0], [x_1, x_1]])
     );
 
     return (0);
 }
+
+void f2 (t_categorey *t_categorey, t_position *P, t_position *sub_P)
 
 int main ( void ) {
     t_categorey     position;
     t_position      *P;
     t_position      *nth_sub_posotion_P;
 
-    P = new_position();                                           // P
+    P = new_position();                                              // P
     n_th_sub_position_P = P->morphisms[1][0](P);                     // (p ..| P)
-    
-    assert(
 
-    );
+    f0(P, n_th_sub_position_P);
+    f1(P, n_th_sub_position_P);
+    
     return (0);
 }
